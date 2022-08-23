@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="container">
+        <div class="logo">
+            <img src="../../../assets/APLogo.png" id="logoAP" alt="">
+        </div>
+        <div class="social">
+            <div>
+                <a href="https://www.linkedin.com/in/diego-benjamin-concha-saifan-710b811a6/"><img src="../../../assets/linkedin.png" style="border-radius: 100%;
+                    box-shadow: 3px 3px 3px black; ;"></a>
+                <a href="https://github.com/BenjaminConcha"><img src="../../../assets/github.png" style="border-radius: 100%; box-shadow: 3px 3px 3px black"></a>
+                <a href="https://www.instagram.com/benjo_021/"><img src="../../../assets/instagram.png" style="border-radius: 100%; box-shadow: 3px 3px 3px black"></a>
+                <a href="https://www.facebook.com/geo.jago/"><img src="../../../assets/facebook.png" style="border-radius: 100%; box-shadow: 3px 3px 3px black"></a>
+                <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESAR</button>
+                <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+            </div>
+            
+        </div>
+    </div>
+
+</div>

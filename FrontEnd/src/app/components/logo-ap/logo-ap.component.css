@@ -1,0 +1,40 @@
+.container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.social{
+    margin-right: 0.5em;
+}
+.social img{
+    margin: 0.3em;    
+}
+
+#logoAP{
+    width: 150px;
+}
+
+img{
+    width: 50px;
+}
+.btn{
+    border-width: medium;
+}
+/* vistas en celular */
+@media(max-width: 575px){
+    .container{
+        flex-direction: column;
+    
+    }
+    .social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social img{
+        margin: 0.3em;    
+    }
+}
+
+

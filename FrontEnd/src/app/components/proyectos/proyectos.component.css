@@ -1,0 +1,16 @@
+.row{
+    background-color: cadetblue;
+    padding: 20px;
+}
+.container{
+    width: auto;
+
+}
+.parte1, .parte2{
+    display: inline-block;
+    text-align: justify;
+}
+.img-proyecto{
+    box-shadow: 10px 10px 30px black;
+
+}
