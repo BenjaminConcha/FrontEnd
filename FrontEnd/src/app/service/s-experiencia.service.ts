@@ -7,7 +7,7 @@ import { Explab } from '../model/explab';
   providedIn: 'root'
 })
 export class SExperienciaService {
-  expURL = 'http://localhost:8080/explab/';
+  expURL = 'https://bkdbcs.herokuapp.com/';
 
   constructor(private httpClient: HttpClient) { }
 
