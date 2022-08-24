@@ -7,7 +7,7 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = 'https://bkdbcs.herokuapp.com/';
+  URL = 'https://bkdbcs.herokuapp.com/personas/';
   constructor(private http: HttpClient) { }
 
   public getPersona(): Observable<persona>{
