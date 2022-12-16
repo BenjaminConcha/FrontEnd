@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  URL: 'https://backend-production-aaf7.up.railway.app/'
 };
