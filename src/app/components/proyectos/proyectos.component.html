@@ -1,15 +1,35 @@
 <div class="row">
-<h1>Proyectos Realizados</h1>
-<div class="container">
-    
-    <div class="col-sm-12 col-md-7 col-lg-7 parte1">
-        <h1>Tienda de Frutas</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus praesentium ipsum incidunt, fuga officiis nobis amet aliquid suscipit. Perspiciatis dolor quisquam repellendus earum culpa. Repellendus aliquid velit voluptates deserunt eius?</p>
+    <h1>Proyectos</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevoproy" *ngIf="isLogged">
+            Nuevo Proyecto
+        </button>
     </div>
-        
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
-             <img src="../../../assets/WebFrutas.png" class="img-fluid img-proyecto" >
-        </div>
 
-</div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let proyecto of proyecto ">
+                    <td>
+                        <h2 >{{proyecto.nombre}}</h2>
+                    </td>
+                    <td >{{proyecto.descripcion}}</td>
+
+                    <td><img [src]="proyecto.imag" class="img-fluid img-proyecto" id="fotoproyecto"></td>
+
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-secondary" routerLink="/editproy/{{proyecto.id}}">
+                            <i class="bi bi-pen-fill"></i> EDITAR</button>
+                    </td>
+
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(proyecto.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
 </div>

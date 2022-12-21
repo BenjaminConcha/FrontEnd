@@ -5,16 +5,21 @@ div{
     background-color: cadetblue;
     text-align: center;
 }
+
 /*Etiqueta foto de perfil*/
 @media (min-width: 576px) {
     #fotoperfil{
-        position: absolute;
-        width: 15%;
+
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
-        left: 3%;
-        top: 575px;
+
     }
+.descripcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 }
 @media (max-width: 575px) {
     #fotoperfil{
@@ -34,3 +39,5 @@ div{
     margin-top: 30%;
     margin-left: 5px;
 }
+
+
